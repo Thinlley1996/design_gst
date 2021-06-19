@@ -309,10 +309,17 @@ h2.resp-accordion:first-child {
   background: #231f20;
   color:#ffffff;
 }
-
-
-     
-     </style>
+</style>
+<style>
+    df-messenger {
+     --df-messenger-bot-message: #ffffff;
+     --df-messenger-button-titlebar-color: #538aaa;
+     --df-messenger-chat-background-color: #fafafa;
+     --df-messenger-font-color: rgb(0, 0, 0);
+     --df-messenger-send-icon: #878fac;
+     --df-messenger-user-message: #fff;
+    }
+  </style>
 </head>
 
 <body>
@@ -1000,7 +1007,6 @@ h2.resp-accordion:first-child {
                               
                             </ul>
                         </aside>
-
                  
             </div>
         </div>
@@ -1098,14 +1104,8 @@ h2.resp-accordion:first-child {
         <a href="feedback.html">Feedback</a>
       </div>
     <footer>
-        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-            <df-messenger
-            intent="WELCOME"
-            chat-title="GSTCHATBOT"
-            agent-id="740ae308-7245-490d-9b6e-6123f5805e65"
-            language-code="en"
-            ></df-messenger>
-        <!-- Footer Start-->
+          </div>
+                <!-- Footer Start-->
         <div class="footer-main footer-bg">
             <div class="footer-area footer-padding">
                 <div class="container">
@@ -1243,7 +1243,18 @@ h2.resp-accordion:first-child {
             </form>
         </div>
     </div>
+   <div >
+    <df-messenger
+    
+      intent="WELCOME"
+      chat-title="GOODS & SERVICES TAX"
+      chat-icon="assets/img/icons/bot.png"
+      agent-id="740ae308-7245-490d-9b6e-6123f5805e65"
+      language-code="en"
+    ></df-messenger>
+</div>
     <!-- Search model end -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <script src="/path/to/jquery.min.js"></script>
 <script src="/path/to/JsLocalSearch.js"></script>
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
