@@ -277,7 +277,39 @@ h2.resp-accordion:first-child {
   outline: none;
   cursor: pointer;
 }
-  
+#feedback { 
+  height: 104px; 
+  width: 104px; 
+  position: fixed; 
+  top: 60%; 
+  z-index: 999;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg); 
+  -o-transform: rotate(-90deg); 
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#feedback a { 
+  display: block; 
+  background: #538aaa; 
+  height: 40px; 
+  width: 112px; 
+  padding: 8px 16px 10px;
+  color: #ffffff; 
+  font-family: Arial, sans-serif; 
+  font-size: 17px; 
+  font-weight: bold; 
+  text-decoration: none; 
+
+  border-radius:0 0 6px 6px;
+}
+
+#feedback a:hover { 
+  background: #231f20;
+  color:#ffffff;
+}
+
 
      
      </style>
@@ -1062,6 +1094,9 @@ h2.resp-accordion:first-child {
             </div>
         </div>
     </div>  
+    <div id="feedback">
+        <a href="feedback.html">Feedback</a>
+      </div>
     <footer>
         <!-- Footer Start-->
         <div class="footer-main footer-bg">
